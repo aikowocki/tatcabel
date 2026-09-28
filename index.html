@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Как рождался шедевр: история одного творческого шторма 🌪</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#17211d;--muted:#5e6964;--paper:#f7f5ef;--card:#fff;--lime:#91cf55;--orange:#e76f35;--cyan:#45aebe;--line:#dfe2d9;--shadow:0 28px 80px rgba(26,38,31,.12)}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font-family:Manrope,system-ui,sans-serif} a{color:inherit}
+.progress{position:fixed;inset:0 0 auto;height:4px;background:transparent;z-index:20}.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--lime),var(--cyan),var(--orange))}
+.hero{min-height:100svh;display:grid;place-items:center;padding:48px 24px;position:relative;overflow:hidden;background:radial-gradient(circle at 20% 20%,rgba(145,207,85,.18),transparent 30%),radial-gradient(circle at 85% 75%,rgba(69,174,190,.16),transparent 32%),var(--paper)}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(23,33,29,.08);border-radius:50%;pointer-events:none}.hero:before{width:60vw;height:60vw;right:-25vw;top:-25vw}.hero:after{width:45vw;height:45vw;left:-25vw;bottom:-25vw}
+.hero-inner{width:min(1050px,100%);position:relative;text-align:center;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:9px 15px;border:1px solid rgba(23,33,29,.1);border-radius:999px;background:rgba(255,255,255,.55);backdrop-filter:blur(10px);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:28px}.hero h1{font-family:"Playfair Display",serif;font-size:clamp(42px,7vw,88px);line-height:.98;letter-spacing:-.045em;margin:0 auto;max-width:980px}.hero h1 span{display:block}.hero-sub{margin:30px auto 0;max-width:600px;color:var(--muted);font-size:16px;line-height:1.7}.scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);font-size:12px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;display:flex;gap:10px;align-items:center}.scroll:after{content:"↓";font-size:18px}
+main{overflow:hidden}.section{width:min(1120px,calc(100% - 40px));margin:0 auto;padding:110px 0;position:relative}.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:32px}.section-kicker{font-size:clamp(26px,4vw,44px);font-weight:800;letter-spacing:-.04em;margin:0}.section-num{font-size:12px;letter-spacing:.14em;color:var(--muted);font-weight:800}.accent-lime{color:#73ad3c}.accent-cyan{color:#2793a4}.accent-orange{color:#c95726}.accent-gold{color:#bd9542}
+.story{display:grid;grid-template-columns:1.18fr .82fr;gap:52px;align-items:center}.story.reverse{grid-template-columns:.82fr 1.18fr}.story.reverse .visual{order:2}.story.reverse .copy{order:1}.visual{position:relative}.image-wrap{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);background:#ddd}.image-wrap img{display:block;width:100%;height:auto;transition:transform .7s cubic-bezier(.2,.8,.2,1)}.image-wrap:hover img{transform:scale(1.025)}.visual:after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid rgba(23,33,29,.12);border-radius:28px;z-index:-1}.copy{font-size:17px;line-height:1.85;color:#39443f}.copy p{margin:0}.copy strong{color:var(--ink)}
+.section-divider{width:min(1120px,calc(100% - 40px));height:1px;background:var(--line);margin:auto}.quote{margin-top:28px;padding:22px 24px;border-left:3px solid currentColor;background:rgba(255,255,255,.55);border-radius:0 16px 16px 0;font-weight:700}
+.final{padding:120px 0 80px;background:#18211e;color:#f7f5ef;position:relative}.final .section{padding-top:0}.final .section-head{margin-bottom:24px}.final .section-kicker{font-family:"Playfair Display",serif;font-size:clamp(38px,6vw,76px)}.final .copy{color:#cdd6d1}.final .visual:after{border-color:rgba(255,255,255,.15)}.logos{display:flex;align-items:center;justify-content:center;gap:42px;flex-wrap:wrap;margin-top:70px;padding-top:34px;border-top:1px solid rgba(255,255,255,.14)}.logos img{max-height:64px;width:auto;max-width:190px;object-fit:contain;background:#fff;padding:7px 12px;border-radius:8px}.footer-note{text-align:center;margin-top:28px;color:#88958e;font-size:12px}
+.lightbox{position:fixed;inset:0;background:rgba(7,11,9,.92);display:none;place-items:center;padding:30px;z-index:30}.lightbox.open{display:grid}.lightbox img{max-width:95vw;max-height:90vh;border-radius:14px;box-shadow:0 20px 80px #000}.close{position:fixed;top:20px;right:24px;border:0;background:rgba(255,255,255,.12);color:#fff;border-radius:50%;width:44px;height:44px;font-size:26px;cursor:pointer}.hint{position:fixed;bottom:20px;color:#aeb8b2;font-size:12px}
+@media(max-width:800px){.hero{min-height:88svh}.section{padding:72px 0;width:min(100% - 28px,620px)}.story,.story.reverse{grid-template-columns:1fr;gap:30px}.story.reverse .visual,.story.reverse .copy{order:initial}.visual:after{inset:10px -10px -10px 10px}.copy{font-size:16px;line-height:1.75}.section-head{align-items:start}.section-num{padding-top:8px}.logos{gap:18px}.logos img{max-height:48px;max-width:145px}}
+</style>
+</head>
+<body>
+<div class="progress"><i></i></div>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">История создания</div>
+    <h1>Как рождался шедевр: история одного <span>творческого шторма 🌪</span></h1>
+  </div>
+  <div class="scroll">Листайте историю</div>
+</header>
+<main>
+  <section class="section">
+    <div class="section-head"><h2 class="section-kicker accent-lime">⚡️ Искра</h2><div class="section-num">01 / 05</div></div>
+    <div class="story">
+      <div class="visual"><div class="image-wrap"><img src="assets/image1.jpeg" alt="Три девушки у доски с конкурсом рисунков" data-lightbox></div></div>
+      <div class="copy"><p>Все началось с конкурса «Мы — кабельщики». Майя затянула Аделю, Аделя — Марию. Мы планировали просто поучаствовать, но не учли одного: у нас слишком много амбиций.</p></div>
+    </div>
+  </section>
+  <div class="section-divider"></div>
+  <section class="section">
+    <div class="section-head"><h2 class="section-kicker accent-gold">🔍 Битва смыслов</h2><div class="section-num">02 / 05</div></div>
+    <div class="story reverse">
+      <div class="visual"><div class="image-wrap"><img src="assets/image2.jpeg" alt="Творческое обсуждение за столом" data-lightbox></div></div>
+      <div class="copy"><p>Мы пытались уместить в один холст и реальность, и будущее, но риск перегрузить его деталями был огромен. Мария была нашим компасом: «В картине должен быть глубокий смысл!». Мы спорили до хрипоты, боясь оказаться слишком простыми на фоне глубоких концепций коллег. Мы не хотели быть «просто хорошими» — мы шли за победой.</p></div>
+    </div>
+  </section>
+  <div class="section-divider"></div>
+  <section class="section">
+    <div class="section-head"><h2 class="section-kicker accent-orange">🔥 Ночной прорыв</h2><div class="section-num">03 / 05</div></div>
+    <div class="story">
+      <div class="visual"><div class="image-wrap"><img src="assets/image3.jpeg" alt="Эскизы настоящего и будущего" data-lightbox></div></div>
+      <div class="copy"><p>Переломный момент случился вечером, когда офис опустел. Аделя достала свои секретные эскизы — те самые, что она набросала в моменты сомнений. В этот момент мы поняли: нельзя выбирать между «сейчас» и «потом». Нужно забрать и то, и другое.</p></div>
+    </div>
+  </section>
+  <div class="section-divider"></div>
+  <section class="section">
+    <div class="section-head"><h2 class="section-kicker accent-cyan">✨ Магия и цифра</h2><div class="section-num">04 / 05</div></div>
+    <div class="story reverse">
+      <div class="visual"><div class="image-wrap"><img src="assets/image4.jpeg" alt="Три художницы работают над картиной" data-lightbox></div></div>
+      <div class="copy"><p>Майя создала на холсте безупречные цветовые переходы и буквально вдохнула в него жизнь, Мария придумала идею, чтобы «продать» шедевр зрителям, а Аделя превратила эту задумку в технологичное приключение, добавив к искусству QR-код и этот самый сайт.</p></div>
+    </div>
+  </section>
+</main>
+<section class="final">
+  <div class="section">
+    <div class="section-head"><h2 class="section-kicker">🌌 Два измерения</h2><div class="section-num">05 / 05</div></div>
+    <div class="story reverse">
+      <div class="visual"><div class="image-wrap"><img src="assets/image5.jpeg" alt="Два изображения белого медведя: настоящее и будущее" data-lightbox></div></div>
+      <div class="copy"><p>И вот вы здесь. Перед вами не просто рисунки, а два наших измерения. Размах идеи оказался больше, чем один кадр, — поэтому мы создали две разные вселенные: Настоящее и Будущее. 🚀<br>Там, где энергия творчества встречается с масштабом ЭКМ Холдинг, рождается истинное искусство. ⚡️</p></div>
+    </div>
+    <div class="logos">
+      <img src="assets/image6.jpeg" alt="ЭКМ Холдинг">
+      <img src="assets/image7.jpeg" alt="ИНТЕХ">
+      <img src="assets/image8.jpeg" alt="ТАТКАБЕЛЬ">
+    </div>
+    <div class="footer-note">© История творческого шторма</div>
+  </div>
+</section>
+<div class="lightbox" id="lightbox" aria-hidden="true"><button class="close" aria-label="Закрыть">×</button><img id="lightboxImg" alt=""><div class="hint">Нажмите Esc или ×, чтобы закрыть</div></div>
+<script>
+const bar=document.querySelector('.progress i');
+addEventListener('scroll',()=>{const h=document.documentElement;bar.style.width=(scrollY/(h.scrollHeight-innerHeight)*100)+'%'});
+const box=document.getElementById('lightbox'), big=document.getElementById('lightboxImg');
+document.querySelectorAll('[data-lightbox]').forEach(img=>img.addEventListener('click',()=>{big.src=img.src;big.alt=img.alt;box.classList.add('open');box.setAttribute('aria-hidden','false')}));
+function closeBox(){box.classList.remove('open');box.setAttribute('aria-hidden','true');big.src=''}
+box.addEventListener('click',e=>{if(e.target===box||e.target.classList.contains('close'))closeBox()});addEventListener('keydown',e=>{if(e.key==='Escape')closeBox()});
+</script>
+</body>
+</html>
